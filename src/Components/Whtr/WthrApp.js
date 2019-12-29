@@ -16,12 +16,18 @@ export default class WthrApp extends Component {
             </Col>
             <Col lg={2} md={"auto"} sm={"auto"}></Col>
           </Row>
-          <Col lg={8}>
-            <WthrForm />
-          </Col>
-          <Col lg={8}>
-            <Wthr />
-          </Col>
+          <Row>
+            <Col lg={12} md={"auto"} sm={"auto"}>
+              <WthrForm />
+            </Col>
+          </Row>
+          <Row>
+            <Col />
+            <Col lg={8}>
+              <Wthr />
+            </Col>
+            <Col />
+          </Row>
         </Container>
       </>
     );

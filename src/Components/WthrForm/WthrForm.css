@@ -4,24 +4,50 @@
   > div:nth-child(1)
   > div:nth-child(1)
   > div:nth-child(2) {
-  width: 400px;
+  width: 800px;
 }
-
-/* 요소 | http://localhost:3000/?city=&Country= */
+.App
+  > div:nth-child(1)
+  > div:nth-child(2)
+  > div:nth-child(1)
+  > div:nth-child(1)
+  > div:nth-child(1)
+  > form:nth-child(1) {
+  display: flex;
+  justify-content: center;
+}
 
 input.form-control:nth-child(1) {
-  height: 40px;
+  padding: 5px;
+  margin: 5px;
 }
-
-/* 요소 | http://localhost:3000/?city=&Country= */
 
 input.form-control:nth-child(2) {
-  height: 40px;
+  padding: 5px;
+  margin: 5px;
 }
 
-/* 요소 | http://localhost:3000/?city=&Country= */
-
 .btn {
-  height: 40px;
-  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  width: 280px;
+}
+
+.col-lg-12 {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > div:nth-child(2) {
+  display: grid;
+  justify-self: center;
+}
+div.col-lg-8:nth-child(1) > form:nth-child(1) {
+  display: grid;
+  justify-content: center;
+}
+div.col-lg-8:nth-child(1) > form:nth-child(1) > div:nth-child(2) {
+  width: min-content;
 }

@@ -1,11 +1,11 @@
 .container {
   margin: 0;
   padding: 0;
-  display: flex;
+  display: grid;
   justify-content: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   /*! align-content: center; */
-  width: 800px;
+  /* width: 800px; */
 }
 .row {
   display: flex;
