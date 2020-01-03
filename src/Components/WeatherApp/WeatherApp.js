@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import App_ID from "../lib/appid";
 import "../../Styles/Weather.css";
-
-const App_ID = "a356aa8551d9437c931d80de6c06c0fa";
 
 const callApiUrl = query =>
   `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${App_ID}&units=metric`;

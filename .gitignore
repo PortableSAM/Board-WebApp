@@ -23,4 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # Wthr App
-**/lib/Api_Key.js
+**/lib/appid.js
