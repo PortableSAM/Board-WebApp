@@ -24,3 +24,7 @@ yarn-error.log*
 
 # Wthr App
 **/lib/appid.js
+
+# firebase
+.firebaserc
+firebase.json
