@@ -107,8 +107,22 @@
 .discription-header h4 {
   font-weight: bold;
 }
+.discription-header img {
+  margin: 5px;
+  padding: 3px;
+  width: 100px;
+  height: 100px;
+}
 
 /* Media Query */
+@media screen and (max-width: 1024px) {
+  .weather-header h2 {
+    width: 30%;
+  }
+  .btn {
+    width: 20%;
+  }
+}
 
 @media screen and (max-width: 800px) {
   .weather-container {
@@ -161,7 +175,11 @@
     width: 90%;
     height: 640px;
   }
+  .weather-header {
+    flex-direction: column;
+  }
   .weather-header h2 {
+    width: 100%;
     margin-bottom: 20px;
   }
 
@@ -189,12 +207,19 @@
     margin: auto;
   }
   .discription-header {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .weather-info {
     font-size: 1.2rem;
     margin-top: 35px;
     display: flex;
     flex-direction: column;
+  }
+
+  .discription-header img {
+    margin: 5px;
+    padding: 3px;
+    width: 65px;
+    height: 65px;
   }
 }

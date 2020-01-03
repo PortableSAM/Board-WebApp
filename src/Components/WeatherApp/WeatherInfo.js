@@ -1,7 +1,7 @@
 import React from "react";
 
 function WeatherInfo({
-  data: { temp, maxTemp, minTemp, country, city, desc, speed, deg }
+  data: { temp, maxTemp, minTemp, country, city, desc, speed, deg, icon }
 }) {
   return (
     <>
@@ -12,6 +12,10 @@ function WeatherInfo({
         <div className=" discription-header">
           <h4>Condition</h4>
           <p>{desc}</p>
+          <img
+            src={`http://openweathermap.org/img/wn/${icon}.png`}
+            alt="weather_icon"
+          />
         </div>
         <div className="discription-header">
           <h4>Temperature</h4>

@@ -21,7 +21,8 @@ function WeatherApp() {
     city: undefined,
     desc: undefined,
     speed: undefined,
-    deg: undefined
+    deg: undefined,
+    icon: undefined
   });
   const [isValidCity, setIsValidCity] = useState(true);
   function updateSerchQuery(event) {
@@ -50,7 +51,8 @@ function WeatherApp() {
       city: name,
       desc: weather[0].main,
       speed: wind.speed,
-      deg: wind.deg
+      deg: wind.deg,
+      icon: weather[0].icon
     });
   }
 
@@ -80,7 +82,6 @@ function WeatherApp() {
           <WeatherInfo data={weatherData} />
         ) : (
           <p>
-            {" "}
             No Weather to Display
             <i className="far fa-sun" />
           </p>
