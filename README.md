@@ -1,4 +1,4 @@
-# Search-based Weather App
+# Search based Weather Info
 
 > Development environment
 
