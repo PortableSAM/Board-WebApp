@@ -1,8 +1,0 @@
-.container {
-  margin-top: 75px;
-}
-.container > hr:nth-child(2) {
-  width: 50%;
-  margin-top: 0.5em;
-  border-top: 2px solid #961717;
-}
