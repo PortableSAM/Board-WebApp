@@ -45,7 +45,7 @@ function WeatherApp() {
     setWeatherData({
       temp: main.temp,
       maxTemp: main.temp_max,
-      minnTemp: main.temp_min,
+      minTemp: main.temp_min,
       country: sys.country,
       city: name,
       desc: weather[0].main,
@@ -68,7 +68,7 @@ function WeatherApp() {
           <button
             onClick={getWeather}
             type="button"
-            className="btn btn-outline-primary"
+            className="btn btn-outline-warning"
           >
             Get Weather
           </button>
