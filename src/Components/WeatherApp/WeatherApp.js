@@ -7,7 +7,7 @@ const App_ID = "a356aa8551d9437c931d80de6c06c0fa";
 const callApiUrl = query =>
   `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${App_ID}&units=metric`;
 
-const cityRegx = /[a-z]/;
+const cityRegx = /[a-z,A-Z]/;
 
 const validateCity = city => cityRegx.test(city);
 
@@ -79,7 +79,11 @@ function WeatherApp() {
         {weatherData.temp ? (
           <WeatherInfo data={weatherData} />
         ) : (
-          <p> No Weather to Display</p>
+          <p>
+            {" "}
+            No Weather to Display
+            <i className="far fa-sun" />
+          </p>
         )}
       </section>
     </section>
